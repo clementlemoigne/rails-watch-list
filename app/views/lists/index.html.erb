@@ -4,9 +4,9 @@
   </div>
 </div>
 
-  <div class="row">
+  <div class="row wrapper">
       <% @lists.each do |list| %>
-            <div class="col">
+            <div class="col wrapper_child">
             <button type="button" class="btn btn-primary">
                 <%= link_to list.name, list_path(list) %>
               </button>
