@@ -1,0 +1,17 @@
+<div class="lists-banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.pexels.com/photos/2398354/pexels-photo-2398354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);">
+  <div class = "container">
+    <h1>Mes listes</h1>
+  </div>
+</div>
+
+  <div class="row">
+      <% @lists.each do |list| %>
+            <div class="col">
+            <button type="button" class="btn btn-primary">
+                <%= link_to list.name, list_path(list) %>
+              </button>
+            </div>
+      <% end %>
+  </div>
+</div>
+
