@@ -1,5 +1,6 @@
 .btn {
-  justify-content: space-between;
+  // justify-content: space-between;
+  align-self: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: 15px;
@@ -9,7 +10,4 @@
 .btn a {
   color: white;
   text-decoration: none;
-}
-
-.btn-primary {
 }
